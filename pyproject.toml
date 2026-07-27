@@ -1,0 +1,19 @@
+[project]
+name = "agent-skill-gen"
+version = "0.1.0"
+description = "Auto-generate structured skill files from agent conversation logs"
+authors = [{ name = "wwb-bill" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+agent-skill-gen = "agent_skill_gen.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agent_skill_gen*"]
